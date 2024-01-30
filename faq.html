@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQs and Help</title>
+    <!-- Add Bootstrap CSS link -->
+    <link rel="stylesheet" href="bootstrap-5.3.1-dist/css/bootstrap.min.css">
+    <script src="bootstrap-5.3.1-dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            background: linear-gradient(120deg, #0ba151, #d8ef42);
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .header img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+        .accordion {
+            background-color: rgba(255, 255, 255, 0.9);
+            margin-bottom: 10px;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .accordion-button {
+            background-color: #2a13bf;
+            color: #333;
+            padding: 15px 20px;
+            font-weight: bold;
+            border: none;
+            text-align: left;
+            cursor: pointer;
+            position: relative;
+            transition: background-color 0.3s ease;
+        }
+
+        .accordion-button:hover {
+            background-color: #f5f5f5;
+        }
+
+        .accordion-button .accordion-symbol {
+            float: right;
+            transition: transform 0.3s ease;
+        }
+
+        .active .accordion-button .accordion-symbol {
+            transform: rotate(180deg);
+        }
+
+        .accordion-content {
+            display: none;
+            padding: 20px;
+        }
+
+        .active .accordion-content {
+            display: block;
+        }
+        
+    </style>
+</head>
+<body>
+<!--image-->
+
+
+    <div class="container mt-5">
+        <div class="header">
+           <a href="/crud/project_S/indextest.html"> <img src="/crud/project_S/img/logo.png" alt="Header Image"></a>
+        </div>
+
+    <div class="container mt-5">
+        <h1 class="text-center text-white mb-4">FAQs and Help</h1>
+        <div id="accordion">
+            <div class="accordion">
+                <button class="accordion-button">
+                    How often should I water my crops?
+                    
+                </button>
+                <div class="accordion-content">
+                    The frequency of watering depends on factors like crop type, soil type, and weather conditions. It's important to maintain consistent moisture levels, and you should water when the top inch of soil is dry.
+                </div>
+            </div>
+
+            <div class="accordion">
+                <button class="accordion-button">
+                    What are some organic pest control methods?
+                 
+                </button>
+                <div class="accordion-content">
+                    Organic pest control methods include introducing beneficial insects, using neem oil, creating physical barriers, and practicing companion planting.
+                </div>
+            </div>
+
+            <div class="accordion">
+                <button class="accordion-button">
+                    How can I improve soil fertility naturally?
+                    
+                </button>
+                <div class="accordion-content">
+                    To improve soil fertility, you can use compost, cover cropping, and crop rotation. These methods help replenish nutrients and enhance soil structure.
+                </div>
+            </div>
+
+            <div class="accordion">
+                <button class="accordion-button">
+                    How can I prevent weeds from overtaking my crops?
+                    
+                </button>
+                <div class="accordion-content">
+                    To prevent weeds, practice regular cultivation, mulching, and use of cover crops.
+                </div>
+            </div>
+
+            <div class="accordion">
+                <button class="accordion-button">
+                    What's the best way to test and adjust soil pH for optimal crop growth?
+                    
+                </button>
+                <div class="accordion-content">
+                    Conduct a soil pH test using a testing kit or by sending a sample to a lab. Depending on the results, you can amend the soil with lime to raise pH or sulfur to lower pH.
+                </div>
+            </div>
+
+            <div class="accordion">
+                <button class="accordion-button">
+                    How can I create a sustainable and eco-friendly farming system?
+                    
+                </button>
+                <div class="accordion-content">
+                    Practice agroecology by integrating diverse crops, conserving water, using organic fertilizers, and minimizing chemical inputs. Implementing integrated pest management (IPM) is also crucial.
+                </div>
+            </div>
+
+            <div class="accordion">
+                <button class="accordion-button">
+                    What are the key factors to consider when choosing a suitable irrigation method?
+                    
+                </button>
+                <div class="accordion-content">
+                    Consider factors such as soil type, climate, crop water requirements, and water availability. Options include drip irrigation for precise watering and sprinkler systems for larger areas.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Add Bootstrap JS and Popper.js scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        const accordions = document.querySelectorAll('.accordion');
+        accordions.forEach(accordion => {
+            const toggleButton = accordion.querySelector('.accordion-button');
+            toggleButton.addEventListener('click', () => {
+                accordion.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
+
+html,body{
+    height: 100%;
+    width: 100%;
+    
+    font-family: 'poppins',sans-serif;
+    color: #222;
+    
+}
+.btn-primary{
+    background-color: #6648b1;
+    border: 1px solid #563d7c;
+
+}
+.btn-primary:hover{
+    background-color: #563d7c;
+}
+
+.jumbotron{
+    padding: 5rem;
+    border-radius: 10%;
+   
+}
+.padding{
+    padding-bottom:2rem;
+}
+.welcome {
+    width: 75%;
+    margin:0 auto;
+    padding-top: 2rem;
+
+}
+.welcome hr{
+    border-top:2px solid #b4b4b4;
+    width: 95%;
+    margin-top: .3rem;
+    margin-bottom: 1rem;
+}
+.social a{
+    font-size: 4.5em;
+    padding: 3rem;
+}
+.fa-facebook{
+    color: #3b5998;
+
+}
+.fa-twitter{
+    color: #00aced;
+
+}
+.fa-google-plus-g{
+    color:#dd4b39;
+}
+.fa-instagram{
+    color: #517fa8;
+}
+.fa-youtube{
+    color:#bb0000;
+}
+.fa-youtube:hover,
+.fa-facebook:hover,
+.fa-instagram:hover,
+.fa-twitter:hover,
+.fa-google-plus-g:hover{
+    color: #d5d5d5;
+}
+footer{
+    background-color: #3f3f3f;
+    color: #d5d5d5;
+    padding-top: 2rem;
+}
+hr.light{
+    border-top: 1px solid #d5d5d5;
+    width: 75%;
+    margin-top: .8rem;
+    margin-bottom: 1rem;
+}
+footer a{
+    color: #d5d5d5;
+}
+hr.light-100{
+    border-top: 1px solid #d5d5d5;
+    width: 100%;
+    margin-top: .8rem;
+    margin-bottom: 1rem;
+}
+.back-video{
+    position: relative;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+@media(min-aspect-ratio:16/9){
+    .back-video{
+        width: 100%;
+        height: 60%;
+    }
+}
+
+
+
+
+/*
+*,
+*::after,
+*::before{
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+
+}
+
+:active,
+:hover,
+:focus{
+    outline: 0 !important;
+    outline-offset: 0;
+
+}
+
+a,
+a:hover{
+    text-decoration: none;
+
+}
+
+a:hover{
+    color: var(--primary-color);;
+
+}
+
+ul,
+ol{
+    margin: 0;
+    padding: 0;
+
+}*/
+
+/* === variable define ====*/
+
+
+/*
+body{
+    font-family: var(--primary-color);
+    font-size: 100%;
+    font-weight: 400%;
+}
+
+/*
+==========
+custom scroll bar
+==========
+*/
+/*
+::-webkit-scrollbar {
+    width: 0.625rem;
+}
+::-webkit-scrollbar-track{
+    background:var(--white-color);
+}
+::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+}
+
+/*
+custom css design*/
+
+h1{
+    font-size: 3rem;
+    font-weight: 900;
+    margin-bottom: 3rem;
+    color: var(--primary-color);
+}
+
+h2{
+    font-size: 2.25rem;
+    font-weight: 700;
+    text-transform: capitalize;
+    font-family: var(--secondary-font);
+    color: var(--secondary-color);
+    line-height: 3rem;
+    
+}
+
+
+h4{
+    font-size: 18px;
+    font-weight: 800;
+    text-transform: capitalize;
+    font-family: var(--secondary-font);
+    color: var(--secondary-color);
+    margin-bottom: 0.5rem;
+    
+}
+
+
+h5{
+    font-size: 2.25rem;
+    font-weight: 700;
+    text-transform: capitalize;
+    font-family: var(--secondary-font);
+    color: var(--secondary-color);
+    line-height: 3rem;
+    
+}
+
+.navbar {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: .9rem;
+    letter-spacing: .1rem;
+    background: rgba(0,0,0,0.6) !important;
+}
+
+
+.navbar-nav li {
+    padding-right: .7rem;
+}
+.navbar-dark .navbar-nav .nav-link {
+    color: white;
+    padding-top: .8rem;
+}
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link:hover{
+    color: #1ebba3;
+}
+.home-inner {
+   
+}
+.caption {
+    width: 100%;
+    max-width: 100%;
+    position: absolute;
+    top: 38%;
+    z-index: 1;
+    color: white;
+    text-transform: uppercase;
+}
+
+.caption h1{
+    font-size: 3.8rem;
+    font-weight: 700;
+    letter-spacing: .3rem;
+    text-shadow: .1rem .1rem .8rem black;
+    padding-bottom: 1rem;
+
+}
+.caption h3{
+    font-style: 2rem;
+    text-shadow: .1rem .1rem .5rem black;
+    padding-bottom: 1.6rem;
+    color: chartreuse;
+}
+.caption a{
+    font-style: var(--third-color);
+    text-shadow: .1rem .1rem .5rem black;
+    padding-bottom: 1.6rem; 
+    color: blue;
+}
+.btn-lg{
+    border-width: medium;
+    border-radius: 0;
+}
+
+.c-item {
+    height: 480px;
+}
+
+.c-img {
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.6);
+}
+

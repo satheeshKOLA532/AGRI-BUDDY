@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Scrolling Text Header</title>
+    <style>
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.scrolling-text-container {
+    position: relative;
+    display: inline-block;
+    animation: blink 1s infinite alternate, changeColor 8s infinite alternate;
+    white-space: nowrap;
+}
+
+.scrolling-text {
+    display: inline-block;
+    padding-right: 100%;
+    color: #34ee91; /* Add your desired text color */
+    margin-bottom: 500px;
+    font-size: 40px
+}
+
+@keyframes blink {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+
+@keyframes changeColor {
+    0%, 100% {
+        color: #ff5733; /* Start and end color */
+    }
+    50% {
+        color: #33ff57; /* Midpoint color */
+    }
+}
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="scrolling-text-container">
+            <p class="scrolling-text">Breaking News: This is a scrolling text headline!</p>
+        </div>
+    </header>
+</body>
+</html>

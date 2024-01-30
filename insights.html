@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmer insights</title>
+    <!-- Include Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap-5.3.1-dist/css/bootstrap.min.css">
+    <script src="bootstrap-5.3.1-dist/js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.5.0/js/all.js"></script>
+
+	
+    <style>
+        body {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+           
+           
+        }
+        
+        .button-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        /* Styling for the buttons */
+        .btn-primary {
+            font-size: 14px;
+            padding: 4px 40px;
+        }
+
+        .content {
+            padding-top: 80px;
+        }
+
+        .bg-video {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1; /* Place the video behind other content */
+        }
+        .section {
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        .section-title {
+            font-size: 34px;
+            margin-bottom: 40px;
+        }
+        .scrolling-text-container {
+    position: relative;
+    display: inline-block;
+    animation: blink 1s infinite alternate, changeColor 8s infinite alternate;
+    white-space: nowrap;
+}
+
+.scrolling-text {
+    display: inline-block;
+    padding-right: 100%;
+    color: #34ee91; /* Add your desired text color */
+    margin-bottom: 500px;
+    font-size: 40px
+}
+
+@keyframes blink {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+
+@keyframes changeColor {
+    0%, 100% {
+        color: #ff5733; /* Start and end color */
+    }
+    50% {
+        color: #33ff57; /* Midpoint color */
+    }
+}
+        .card {
+            background-color: #ffffff;
+            border: 2px solid #e5e5e5;
+            border-radius: 10px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            background: linear-gradient(120deg, #c9dadb, #e8f0ed);
+        }
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        
+        .card-title {
+            color: #380fec;
+        }
+
+        .card-text {
+            color: #d30f0fc5;
+            font-style: italic;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .custom-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+
+   
+
+    <!--language translation-->
+
+    <div id="google_element"></div>
+    <script src="http://translate.google.com/translate_a/element.js?cb=loadGoogleTranslate"></script>
+<script>
+	function loadGoogleTranslate(){
+		new google.translate.TranslateElement(
+			"google_element"
+		);
+	}
+</script>
+    <!--bg video-->
+    <video class="bg-video" autoplay muted loop>
+        <source src="/crud/project_S/farming1.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <div class="container content custom-container">
+
+        <!-- Row 1 -->
+        <div class="row">
+            <!-- Mercury -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    
+                    <img src="/crud/project_S/uploads/carimg/organic.jpeg" class="card-img-top" alt="Mercury">
+                    <div class="card-body">
+                        <h5 class="card-title">Organic Techniques</h5>
+                        <p class="card-text">Organic farming techniques prioritize natural harmony, employing composting, crop rotation, and integrated pest management to enrich soil health and promote resilient ecosystems.</p>
+                        <a class="card-link" href="https://youtu.be/1ypo1eqKxMk?si=jltAddKdEZ3L8NZX"><button class="btn-primary">video</button></a>
+                        <a class="card-link" href="https://eorganic.org/"><button class="btn-primary">docs</button></a>
+                    </div>
+                </a>
+                </div>
+            </div>
+<!--script1-->
+<script>
+    function redirectToOption(planetName, option) {
+        if (option === 'video') {
+            // Redirect to video URL
+            window.location.href = "planet1_video_url";
+        } else if (option === 'documentation') {
+            // Redirect to documentation URL
+            window.location.href = "planet1_documentation_url";
+        }
+    }
+</script>
+
+            <!-- market data-->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="/crud/project_S/uploads/carimg/market.jpeg" class="card-img-top" alt="market data">
+                    <div class="card-body">
+                        <h5 class="card-title">Live Market Data(Mandis)</h5>
+                        <p class="card-text">Live agricultural market data offers real-time insights into commodity prices, supply and demand trends, empowering farmers and stakeholders to make informed decisions that maximize profitability and sustainability.</p>
+                        <a class="card-link" href="https://www.youtube.com/live/G58DCwc0aTI?si=o35-3zNABfXxSPYy"><button class="btn-primary">video</button></a>
+                        <a class="card-link" href="https://enam.gov.in"><button class="btn-primary">docs</button></a>
+                    </div>
+                </a>
+                </div>
+            </div>
+ <!--script2-->
+
+            <!-- crop care -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    
+                    <img src="/crud/project_S/uploads/carimg/cropcare.jpg" class="card-img-top" alt="crop">
+                    <div class="card-body">
+                        <h5 class="card-title">Instant Crop care</h5>
+                        <p class="card-text"> Crop care is the act of protecting crops from weather, pests, or nutrient deficiency; crop care includes fertilization, pesticide application,temperature control, and more.</p>
+                        <a class="card-link" href="https://www.youtube.com/@cropcare8696"><button class="btn-primary">video</button></a>
+                        <a class="card-link" href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjQ7ceCiuaAAxUDgFYBHWyzCoUQFnoECBYQAQ&url=https%3A%2F%2Fwww.mahindraagri.com%2Four-businesses%2Fcrop-care%2Fcrop-care-products%2F&usg=AOvVaw2nfVjoSPXCYToysl85UDBc&opi=89978449"><button class="btn-primary">docs</button></a>
+
+                    </div>
+                
+                </div>
+            </div>
+        </div>
+
+         <!--script3-->
+
+
+        <!-- Row 2 -->
+        <div class="row">
+            <!-- insurance -->
+            <div class="col-md-4 mb-4">
+                
+                <div class="card">
+                    
+                    <img src="/crud/project_S/uploads/carimg/insurance.jpeg" class="card-img-top" alt="insurance">
+                    <div class="card-body">
+                        <h5 class="card-title">Crop Insurance Policies</h5>
+                        <p class="card-text"> Crop care is the act of protecting crops from weather, pests, or nutrient deficiency; crop care includes fertilization, pesticide application,temperature control, and more.</p>
+                        <a class="card-link" href="https://youtu.be/dFpyPLwocLg?si=Lr6HAIH4Hc6-5eL6"><button class="btn-primary">video</button></a>
+                        <a class="card-link" href="https://www.agriculture.gov.in"><button class="btn-primary">docs</button></a>
+                    </div>
+                </a>
+                </div>
+            </div>
+
+ <!--script4-->
+
+
+            <!-- harvest -->
+            <div class="col-md-4 mb-4">
+                
+                <div class="card">
+                    
+                    <img src="/crud/project_S/uploads/carimg/harvest.jpeg" class="card-img-top" alt="harvest">
+                    <div class="card-body">
+                        <h5 class="card-title">Harvesting Techniques</h5>
+                        <p class="card-text">Best harvesting techniques combine timing and technology to delicately gather mature crops, minimizing waste and preserving flavor and nutritional value for superior farm-to-table freshness.</p>
+                        <a class="card-link" href="https://youtu.be/l0bpy857deM?si=jWnm_HVsdqBkLwjd"><button class="btn-primary">video</button></a>
+                        <a class="card-link" href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwj929vsieaAAxXHqFYBHdV_DT8QFnoECA4QAw&url=http%3A%2F%2Fwww.knowledgebank.irri.org%2Fstep-by-step-production%2Fpostharvest%2Fharvesting&usg=AOvVaw2mvO5dbnnzUgXIAhgyTz6M&opi=89978449"><button class="btn-primary">docs</button></a>
+                    </div>
+                </a>
+                </div>
+            </div>
+ <!--script5-->
+
+
+            <!-- insurance -->
+            
+            <div class="col-md-4 mb-4">
+             
+                <div class="card">
+                    <img src="/crud/project_S/uploads/carimg/irr.jpeg" class="card-img-top" alt="insurance">
+                    <div class="card-body">
+                        <h5 class="card-title">Best Irrigation Techniques</h5>
+                        <p class="card-text">Best irrigation techniques optimize water usage through drip and smart systems, ensuring crops receive precise hydration while conserving resources and enhancing yield quality.</p>
+                        <a class="card-link" href="https://youtu.be/Z9HAy9EYKKs?si=tFbDSFrCoRgWz5JN"><button class="btn-primary">video</button></a>
+                        <a class="card-link" href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwiGlJD4ieaAAxVymVYBHY7kDhoQFnoECBEQAw&url=https%3A%2F%2Fwww.cdc.gov%2Fhealthywater%2Fother%2Fagricultural%2Ftypes.html&usg=AOvVaw2nKthHyEgL2gx5Cyv-gkWN&opi=89978449"><button class="btn-primary">docs</button></a>
+                    </div>
+                </a>
+                </div>
+            </div>
+        </div>
+ <!--script6-->
+
+
+        <!-- Row 3 -->
+        <div class="row">
+            <!-- education-->
+            <div class="col-md-4 mb-4">
+               
+                <div class="card">
+                   
+                    <img src="/crud/project_S/uploads/carimg/farmereducation.jpeg" class="card-img-top" alt="education">
+                    <div class="card-body">
+                        <h5 class="card-title">Farmer Education(Zero-Hero)</h5>
+                        <p class="card-text">Farmer education equips agricultural communities with valuable knowledge and skills, fostering sustainable practices, innovation, and empowerment for improved livelihoods and enhanced food systems.</p>
+                        <a class="card-link" href="https://youtu.be/OzGudoy7keA?si=Rf0mBb6KoOV00ZeJ"><button class="btn-primary">video</button></a>
+                        <a class="card-link" href="https://attra.ncat.org/"><button class="btn-primary">docs</button></a>
+                    </div>
+                    </a>
+                </div>
+            </div>
+ <!--script7-->
+
+
+            <!-- bacteria -->
+            <div class="col-md-4 mb-4">
+            
+                <div class="card">
+                    
+                    <img src="/crud/project_S/uploads/carimg/bacteria.jpeg" class="card-img-top" alt="bacteria">
+                    <div class="card-body">
+                        <h5 class="card-title">Early Detection of Bacteria/virus</h5>
+                        <p class="card-text">Detection of bacteria and viruses employs advanced technologies to swiftly identify and analyze microbial threats, enabling proactive measures to safeguard public health and agricultural productivity.</p>
+                        <a class="card-link" href="https://youtu.be/H2868L10Ft8?si=rShckwWPTAl8alGo"><button class="btn-primary">video</button></a>
+                        <a class="card-link" href="http://www.fao.org/home/en/"><button class="btn-primary">docs</button></a>
+                    </div>
+                </a>
+                </div>
+            </div>
+ <!--script8-->
+
+
+            <!-- Add more planet cards as needed -->
+            
+            <!-- Weather Card -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="/crud/project_S/uploads/carimg/weather.gif" class="card-img-top" alt="Pluto">
+                    <div class="card-body">
+                        <h5 class="card-title">Weather Report</h5>
+                        <button class="btn-primary" onclick="fetchWeather()">Get Current Location Weather</button>
+                        <div id="weather-content">
+                            <!-- Weather data will be displayed here -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <script>
+                // Replace 'YOUR_API_KEY' with your actual OpenWeatherMap API key
+                const apiKey = '83ea53921900eb8ecb0f11beae8eeb60';
+            
+                // Function to fetch weather data based on user's current location
+                async function fetchWeather() {
+                    if ("geolocation" in navigator) {
+                        try {
+                            navigator.geolocation.getCurrentPosition(async function(position) {
+                                const latitude = position.coords.latitude;
+                                const longitude = position.coords.longitude;
+            
+                                const apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=metric`;
+            
+                                const response = await fetch(apiUrl);
+                                const data = await response.json();
+            
+                                // Extract relevant weather information
+                                const temperature = data.main.temp;
+                                const weatherDescription = data.weather[0].description;
+            
+                                // Update the weather card content
+                                const weatherContent = document.getElementById('weather-content');
+                                weatherContent.innerHTML = `
+                                    <p><strong>Temperature:</strong> ${temperature}°C</p>
+                                    <p><strong>Description:</strong> ${weatherDescription}</p>
+                                `;
+                            });
+                        } catch (error) {
+                            console.error('Error fetching weather data:', error);
+                            // Display an error message if data cannot be fetched
+                            const weatherContent = document.getElementById('weather-content');
+                            weatherContent.innerHTML = '<p>Error fetching weather data. Please try again later.</p>';
+                        }
+                    } else {
+                        alert("Geolocation is not available in your browser.");
+                    }
+                }
+            </script>
+
+        </div>
+
+    </div>
+<!--
+    <script>
+        // Get all card elements
+        const cards = document.querySelectorAll('.card');
+    
+        // Function to apply zoom-out effect on hover
+        function handleCardHover(event) {
+            event.target.style.transform = 'scale(1.05)';
+        }
+    
+        // Function to reset card style when mouse leaves
+        function handleCardLeave(event) {
+            event.target.style.transform = 'scale(1)';
+        }
+    
+        // Attach event listeners to each card
+        cards.forEach(card => {
+            card.addEventListener('mouseover', handleCardHover);
+            card.addEventListener('mouseout', handleCardLeave);
+        });
+    </script>  -->
+    <!-- Include Bootstrap JS (Optional) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

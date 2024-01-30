@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>saramorganicfarms.com</title>
+
+	
+
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+	<link href="style.css" rel="stylesheet">
+	<style>
+		 .testimonial-slider {
+            width: 80%;
+            max-width: 800px;
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+        }
+
+        .testimonial-slide {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 40px;
+            min-height: 300px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+            transition: transform 0.5s ease-in-out;
+            position: relative;
+        }
+
+        .testimonial-slide p {
+            margin-bottom: 20px;
+        }
+
+        .testimonial-image {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            object-fit: cover;
+            position: absolute;
+            top: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .testimonial-slide.active {
+            transform: translateX(0);
+        }
+
+        .testimonial-slide.next {
+            transform: translateX(100%);
+        }
+
+        .testimonial-slide.prev {
+            transform: translateX(-100%);
+        }
+
+        .testimonial-controls {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .testimonial-control {
+            width: 10px;
+            height: 10px;
+            margin: 0 5px;
+            border-radius: 50%;
+            background-color: #999;
+            cursor: pointer;
+        }
+
+        .testimonial-control.active {
+            background-color: #333;
+        }
+	</style>
+</head>
+<body >
+
+<!--<div id="google_element"></div>
+<script src="http://translate.google.com/translate_a/element.js?cb=loadGoogleTranslate"></script>
+<script>
+	function loadGoogleTranslate(){
+		new google.translate.TranslateElement(
+			"google_element"
+		);
+	}
+</script>
+
+-->
+<!-- Navigation -->
+<nav class="navbar  navbar-expand-md  bg-light sticky-top">
+	<div class="container-fluid">
+		<a class="navbar-brand" href="#"><img src="/crud/project_S/img/logo.png" width="100" height="80"></a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarReresponsive">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarResponsive">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item active">
+					<a class="nav-link" href="#">Home</a>
+				</li>
+				<li class="nav-item active">
+					<a class="nav-link" href="#">About us</a>
+				</li>
+				<li class="nav-item active">
+					<a class="nav-link" href="#">Products</a>
+				</li>
+				<li class="nav-item active">
+					<button class="btn btn-warning"><a class="nav-link" href="#">Insights</a></button>
+				</li>
+				<li class="nav-item active">
+					<a class="nav-link" href="/crud/project_S/registration.php" target="_blank">Farmer registration</a>
+				</li>
+				<li class="nav-item active">
+					<a class="nav-link" href="/crud/project_S/login.php" target="_blank">Farmer Login</a>
+				</li>
+				<li class="nav-item active">
+					<a class="nav-link" href="#">contact us</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</nav>
+
+<!--- Image Slider -->
+<div id="slides" class="carousel slide" data-ride="carousel">
+	<ul class="carousel-indicators">
+		<li data-target="#slides" data-slide-to="0" class="active"></li>
+		<li data-target="#slides" data-slide-to="1"></li>
+		<li data-target="#slides" data-slide-to="2"></li>
+	</ul>
+	<div class="carousel-inner">
+		<div class="carousel-item active" data-bs-interval="100">
+			<img src="/crud/project_S/bg1.jpg">
+			<div class="carousel-caption">
+				<h3 class="display-2" >Welcome to Saram organic farms</h3>
+				<h3 style="color:yellowgreen;">10% Discount now on all plants</h3>
+				<button type="button" class="btn btn-outline-light btn-lg">ORDER NOW</button>
+			</div>
+		</div>
+		<div class="carousel-item" data-bs-interval="100">
+			<img src="/crud/project_S/bg3.jpg">
+			<div class="carousel-caption">
+				<h3 class="display-2" >All type of plants available here</h3>
+				<h3>PURE ORGANIC</h3>
+				<button type="button" class="btn btn-outline-light btn-lg">ORDER NOW</button>
+			</div>
+			</div>
+		<div class="carousel-item" data-bs-interval="100">
+			<img src="/crud/project_S/img/bg1.jpg">
+			<div class="carousel-caption">
+				<h3 class="display-2" >Best quality date plants</h3>
+				<h3>WEEKLY FIELD TRIP</h3>
+				<button type="button" class="btn btn-outline-light btn-lg">BUY NOW</button>
+			</div>
+		</div>
+		
+		</div>													
+	</div>
+
+</div>
+
+<!--- Jumbotron -->
+<div class="container-fluid">
+	<div class="row Jumbotron">
+		<div class="col-xs-12 col-sm-12 col-md-9 col-xl-10">
+			<p class="lead">
+				All the plants are purely maintained under extra care
+			</p>
+		</div>
+	</div>
+</div>
+
+<!--- Welcome Section -->
+
+
+<!--- Three Column Section -->
+
+<!--<div class="testimonial-slider">
+	<div class="testimonial-slide active">
+		<img class="testimonial-image" src="/crud/project_S/uploads/carimg/bacteria.jpeg" alt="Person 1">
+		<br><br>
+		<p><strong>John Doe</strong></p>
+		<p>CEO, Company Inc.</p>
+	</div>
+	<div class="testimonial-slide next">
+		<img class="testimonial-image" src="/crud/project_S/uploads/carimg/market.jpeg" alt="Person 2">
+		
+		<p><strong>Jane Smith</strong></p>
+		<p>Designer, Creative Studio</p>
+	</div>
+	<div class="testimonial-slide prev">
+		<img class="testimonial-image" src="/crud/project_S/uploads/carimg/irr.jpeg" alt="Person 3">
+		<p>"Maecenas scelerisque bibendum nibh a accumsan. Curabitur ultricies, libero non bibendum ullamcorper."</p>
+		<p><strong>Robert Johnson</strong></p>
+		<p>Developer, Tech Corp</p>
+	</div>
+	<div class="testimonial-controls">
+		<div class="testimonial-control active" onclick="showSlide(0)"></div>
+		<div class="testimonial-control" onclick="showSlide(1)"></div>
+		<div class="testimonial-control" onclick="showSlide(2)"></div>
+	</div>
+</div>
+-->
+<!--<script>
+	let currentSlide = 0;
+	const slides = document.querySelectorAll('.testimonial-slide');
+	const controls = document.querySelectorAll('.testimonial-control');
+
+	function showSlide(slideIndex) {
+		if (slideIndex === currentSlide) {
+			return;
+		}
+
+		slides[currentSlide].classList.remove('active');
+		slides[currentSlide].classList.remove('next');
+		slides[currentSlide].classList.remove('prev');
+
+		controls[currentSlide].classList.remove('active');
+
+		if (slideIndex > currentSlide) {
+			slides[slideIndex].classList.add('next');
+		} else {
+			slides[slideIndex].classList.add('prev');
+		}
+
+		slides[slideIndex].offsetHeight;
+		slides[slideIndex].classList.add('active');
+
+		controls[slideIndex].classList.add('active');
+
+		currentSlide = slideIndex;
+	}
+</script> -->
+
+
+
+
+
+
+<div class="testimonial-slider">
+	<div class="testimonial-container">
+		<div class="testimonial-slide">
+			<img class="testimonial-image" src="/crud/project_S/uploads/carimg/bacteria.jpeg" alt="Person 1"> <br><br>
+			
+			<p><strong>John Doe</strong></p>
+			<p>CEO, Company Inc.</p>
+		</div>
+		<div class="testimonial-slide">
+			<img class="testimonial-image" src="/crud/project_S/uploads/carimg/bacteria.jpeg" alt="Person 2">
+			<p>"Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas."</p>
+			<p><strong>Jane Smith</strong></p>
+			<p>Designer, Creative Studio</p>
+		</div>
+		<div class="testimonial-slide">
+			<img class="testimonial-image" src="/crud/project_S/uploads/carimg/bacteria.jpeg" alt="Person 3">
+			<p>"Maecenas scelerisque bibendum nibh a accumsan. Curabitur ultricies, libero non bibendum ullamcorper."</p>
+			<p><strong>Robert Johnson</strong></p>
+			<p>Developer, Tech Corp</p>
+		</div>
+	</div>
+	<div class="testimonial-controls">
+		<div class="testimonial-control active" onclick="showSlide(0)"></div>
+		<div class="testimonial-control" onclick="showSlide(1)"></div>
+		<div class="testimonial-control" onclick="showSlide(2)"></div>
+	</div>
+</div>
+
+<script>
+	let currentSlide = 0;
+	const container = document.querySelector('.testimonial-container');
+	const controls = document.querySelectorAll('.testimonial-control');
+
+	function showSlide(slideIndex) {
+		container.style.transform = `translateX(-${slideIndex * 100}%)`;
+
+		controls[currentSlide].classList.remove('active');
+		controls[slideIndex].classList.add('active');
+
+		currentSlide = slideIndex;
+	}
+
+	function autoSlide() {
+		currentSlide = (currentSlide + 1) % controls.length;
+		showSlide(currentSlide);
+	}
+
+	setInterval(autoSlide, 5000); // Auto slide every 5 seconds
+</script>
+<!--- Two Column Section -->
+
+
+<!--- Fixed background -->
+
+
+<!--- Emoji Section -->
+
+  
+<!--- Meet the team -->
+
+
+<!--- Cards -->
+
+
+<!--- Two Column Section -->
+
+
+<!--- Connect -->
+
+
+<!--- Footer -->
+
+
+
+
+</body>
+</html>
+
+<!-- View in Browser -->
+
+<!-- End View in Browser -->
